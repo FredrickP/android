@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="control_background">#cc4285f4</color>
+    <color name="background">#c1e964</color>
+    <color name="colorPrimary">#07b5ff</color>
+    <color name="colorPrimaryDark">#0066ff</color>
+    <color name="colorAccent">#CA991C</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#4d85ff</color>
+    <color name="yello">#CA991C</color>
+    <color name="green">#00bfa5</color>
+</resources>
