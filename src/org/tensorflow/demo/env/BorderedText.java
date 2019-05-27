@@ -22,6 +22,10 @@ import android.graphics.Paint.Align;
 import android.graphics.Paint.Style;
 import android.graphics.Rect;
 import android.graphics.Typeface;
+import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 
 /**
@@ -30,6 +34,7 @@ import java.util.Vector;
 public class BorderedText {
   private final Paint interiorPaint;
   private final Paint exteriorPaint;
+  public static List<String> textnya = new ArrayList<>();
 
   private final float textSize;
 
@@ -75,9 +80,14 @@ public class BorderedText {
     exteriorPaint.setTypeface(typeface);
   }
 
-  public void drawText(final Canvas canvas, final float posX, final float posY, final String text) {
+  public void drawText(final Canvas canvas, final float posX, final float posY, String text) {
     canvas.drawText(text, posX, posY, exteriorPaint);
     canvas.drawText(text, posX, posY, interiorPaint);
+    String[] texts = text.split(" ");
+
+    text = texts[0];
+
+      textnya.add(text);
   }
 
   public void drawLines(Canvas canvas, final float posX, final float posY, Vector<String> lines) {
